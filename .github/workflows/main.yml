@@ -22,8 +22,8 @@ jobs:
     - name: Install Dependencies
       run: |
         python -m pip install --upgrade pip 
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-
+        pip install pyodbc
+        
     - name: Run Unit Tests
       run: |
        python VIRTUAL_ART_GALLERY/test_main.py
